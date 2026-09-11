@@ -1206,6 +1206,20 @@
       padding-right: 0;
     }
 
+    .project-update-grid.single { grid-template-columns: 1fr; }
+
+    .project-update-grid.single .project-update {
+      display: grid;
+      grid-template-columns: minmax(220px, .75fr) minmax(0, 1.75fr);
+      gap: 48px;
+      padding-right: 0;
+    }
+
+    .project-update-grid.single .project-learning {
+      margin-top: 0;
+      align-self: start;
+    }
+
     .project-meta {
       margin-bottom: 12px;
       color: var(--accent);
@@ -1295,6 +1309,7 @@
       .project-update-grid { grid-template-columns: 1fr; }
       .project-update, .project-update + .project-update { padding: 28px 0; border-left: 0; }
       .project-update + .project-update { border-top: 1px solid var(--rule); }
+      .project-update-grid.single .project-update { grid-template-columns: 1fr; gap: 18px; }
       .goals-hero, .targets-hero { gap: 24px; padding-top: 52px; }
       .goals-quote { padding: 0 22px 44px; margin-top: 24px; }
       .goals-quote-inner { font-size: 16px; }
@@ -1375,7 +1390,7 @@
         기능이 잘 작동하는 것과 사용자가 안심하고 쓰는 것은 같은 일이 아니었습니다.
       </div>
       <div class="hero-intro">
-        지난 학기에는 이 문제를 서로 다른 두 환경에서 다뤘습니다. 제조 현장에서는 AI Agent가 실행할 수 있는 범위를 작업자가 정하도록 했고, 미술관에서는 스마트 글래스가 관람을 방해하지 않도록 개입 시점과 정보량을 조절했습니다. 두 프로젝트를 마치고 나니 관심의 중심이 더 선명해졌습니다. <strong style="color:#3d3d3d">AI가 언제 나서야 하고, 사람에게 어떤 판단을 남겨야 하는가.</strong> 이번 학기에는 이 질문을 더 구체적으로 다뤄보려 합니다.
+        지난 학기에는 제조 현장의 AI Agent와 미술관의 스마트 글래스 도슨트를 설계했습니다. 이번 학기에는 화면 밖으로 범위를 넓히고 있습니다. 생성형 AI의 처리 중·입력 필요·완료 상태를 움직임과 빛, 촉각으로 알리는 데스크 오브젝트를 만들고 있습니다. 휴머노이드 형태보다는 디지털 작업에 반응하는 작은 물리 오브젝트에 가깝습니다. <strong style="color:#3d3d3d">사람이 AI의 상태를 어떻게 알아차리고, 어느 순간 개입하는지</strong>를 HRI와 피지컬 인터랙션의 관점에서 살펴보려 합니다.
       </div>
     </div>
   </div>
@@ -1551,8 +1566,8 @@
         </div>
         <div class="who-card">
           <div class="who-card-num">What comes next</div>
-          <div class="who-card-title">두 사례를 하나의 질문으로</div>
-          <div class="who-card-body">지난 학기에는 실행 권한과 개입 타이밍을 각각 다뤘습니다. 이번 학기에는 두 결과를 함께 놓고 보려 합니다. <strong style="color:rgba(255,255,255,0.85)">AI의 자율성이 커질수록 사용자가 알아야 할 상태, 선택해야 할 순간, 책임의 경계는 어떻게 달라지는지</strong>를 더 명확한 연구 질문으로 만들고 싶습니다.</div>
+          <div class="who-card-title">화면 밖에서 같은 문제를 이어간다</div>
+          <div class="who-card-body">이번 학기에는 생성형 AI의 작업 상태를 움직임과 빛, 촉각으로 알리는 데스크 오브젝트를 만들고 있습니다. <strong style="color:rgba(255,255,255,0.85)">AI의 상태를 사람이 어떻게 알아차리고 언제 개입하는지</strong>를 피지컬 인터랙션과 HRI의 관점에서 직접 시험해보려 합니다.</div>
         </div>
       </div>
     </div>
@@ -1575,6 +1590,23 @@
         <h3 class="project-title">상황 인식 기반 스마트 글래스 도슨트</h3>
         <p class="project-body">관람자의 시선과 위치, 체류 시간, 소음, 혼잡도를 바탕으로 안내 시점과 정보량을 조절했습니다. 설문 38명, 현장 관찰, 전문가 인터뷰, 기기 체험을 거치며 ‘풍부한 안내’보다 감상 흐름을 깨지 않는 절제가 중요하다는 결론에 닿았습니다.</p>
         <p class="project-learning">배운 점 · 맥락을 잘 읽는 시스템은 필요한 순간에 나서지만, 방해가 되는 순간에는 물러날 줄 알아야 했습니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="semester-section" aria-labelledby="current-semester-title">
+    <div class="semester-section-head">
+      <h2 class="semester-section-title" id="current-semester-title">This Semester</h2>
+      <p class="semester-section-desc">화면 안에서 다루던 AI의 상태와 사용자 개입 문제를 물리적인 움직임과 주변부 신호로 확장하고 있습니다.</p>
+    </div>
+    <div class="project-update-grid single">
+      <article class="project-update">
+        <div>
+          <div class="project-meta">In Progress · HRI / Physical Interaction</div>
+          <h3 class="project-title">생성형 AI 작업 상태를 알리는 데스크 오브젝트</h3>
+          <p class="project-body">생성형 AI가 처리 중인지, 입력을 기다리는지, 완료됐는지 확인하느라 작업 화면을 반복해서 여는 문제에서 시작했습니다. 작업 상태를 움직임·빛·촉각으로 구분하고, 사용자가 필요할 때 작업을 멈추거나 관련 화면을 불러오는 작은 오브젝트를 만들고 있습니다.</p>
+        </div>
+        <p class="project-learning">지금 확인하는 것 · 피지컬 신호가 화면 확인을 줄이면서도 새로운 방해가 되지 않을 수 있는지, 어느 정도의 움직임이 자연스럽고 이해하기 쉬운지, 상세한 판단은 화면에 남기면서 물리 오브젝트가 어디까지 역할을 맡아야 하는지 테스트할 계획입니다.</p>
       </article>
     </div>
   </section>
@@ -1604,14 +1636,14 @@
       지난 학기의 작업을<br />다음 질문으로 이어갑니다.
     </h1>
     <div class="goals-intro">
-      첫 학기를 시작할 때는 AI가 개입하는 경험에서 신뢰가 어떻게 생기는지 알고 싶었습니다. 두 프로젝트를 끝낸 지금은 질문이 조금 더 구체적입니다. 제조 현장에서는 실행 범위와 책임의 경계가 중요했고, 미술관에서는 개입 시점과 절제가 중요했습니다. <strong style="color:#3d3d3d">이번 학기에는 이 차이를 비교하면서 상황에 따라 달라지는 AI 개입의 기준을 정리해보려 합니다.</strong>
+      첫 학기에는 AI가 개입하는 경험에서 신뢰가 어떻게 생기는지 살펴봤습니다. 제조 현장에서는 실행 범위와 책임의 경계가 중요했고, 미술관에서는 개입 시점과 절제가 중요했습니다. 이번 학기에는 질문을 화면 밖으로 가져갑니다. <strong style="color:#3d3d3d">생성형 AI의 상태를 물리적인 움직임으로 알리고 사람이 필요할 때 개입하는 데스크 오브젝트를 만들며, HRI와 피지컬 인터랙션을 직접 다뤄보려 합니다.</strong>
     </div>
   </div>
 
   <div class="goals-quote">
     <div class="goals-quote-spacer"></div>
     <div class="goals-quote-inner">
-좋은 자동화는 모든 일을 대신하지 않습니다. 사람이 판단해야 할 순간을 알아볼 수 있게 남겨둡니다.
+AI가 화면 밖으로 나오면, 상태를 알리는 방식과 사람이 개입하는 방법도 달라져야 합니다.
     </div>
   </div>
 
@@ -1628,23 +1660,23 @@
       <div class="timeline-line"></div>
       <div class="timeline-content">
         <div class="goal-label" style="color:#b8aa78">This Semester · 2026 Fall</div>
-        <div class="timeline-title">두 프로젝트에서 나온 기준을 하나의 연구 질문으로 묶기</div>
+        <div class="timeline-title">화면 밖에서 AI의 상태와 사용자 개입을 설계하기</div>
         <div class="timeline-body">
-          MES AI Agent에서는 실행 범위, 유효 시간, 중단 조건을 직접 정하게 했습니다. 스마트 글래스 도슨트에서는 시선과 체류 시간, 소음과 혼잡도에 따라 안내 강도를 조절했습니다. 이번 학기에는 두 결과를 나란히 놓고 <strong>업무의 위험도와 사용자의 몰입 상태에 따라 필요한 통제와 피드백이 어떻게 달라지는지</strong> 정리할 계획입니다. 실무에서 겪는 자동화 사례도 같은 틀로 기록해보려 합니다.
+          생성형 AI의 작업 상태를 확인하느라 화면을 반복해서 여는 문제에서 시작했습니다. 처리 중·입력 필요·완료·오류 상태를 작은 움직임과 빛, 촉각으로 구분하고, 필요할 때 작업을 멈추거나 관련 화면을 불러오는 오브젝트를 만들고 있습니다. <strong>피지컬 신호가 화면 확인을 줄이면서도 새로운 방해가 되지 않을 수 있는지</strong>, 로봇과 사람 사이에서 상태와 개입 권한을 어떻게 나눌지 테스트할 계획입니다.
         </div>
         <div class="timeline-tags">
-          <span class="ttag">두 사례 비교</span>
-          <span class="ttag">개입 수준 정리</span>
-          <span class="ttag">상태·경계·피드백</span>
-          <span class="ttag">실무 사례 기록</span>
+          <span class="ttag">Human-Robot Interaction</span>
+          <span class="ttag">Physical Interaction</span>
+          <span class="ttag">Ambient Feedback</span>
+          <span class="ttag">Embodied AI</span>
         </div>
         <div class="goal-actions-grid" style="margin-top:16px">
           <div class="goal-action-block">
             <div class="goal-action-label">Related Research</div>
             <div class="goal-action-chips research-list">
-              <span class="goal-action-item research"><a href="https://arxiv.org/abs/2302.02187" target="_blank" rel="noopener">Appropriate Reliance on AI Advice (Schemmer et al., 2023)</a></span>
-              <span class="goal-action-item research"><a href="https://arxiv.org/abs/2110.10790" target="_blank" rel="noopener">Human-Centered Explainable AI (Liao & Varshney, 2021)</a></span>
-              <span class="goal-action-item research"><a href="https://journals.sagepub.com/doi/10.1518/hfes.46.1.50_30392" target="_blank" rel="noopener">Trust in Automation (Lee & See, 2004)</a></span>
+              <span class="goal-action-item research"><a href="https://www.microsoft.com/en-us/research/publication/ai-at-your-fingertips-wearable-ring-as-a-low-friction-interface-for-agentic-ai/" target="_blank" rel="noopener">AI at your Fingertips (Microsoft Research)</a></span>
+              <span class="goal-action-item research"><a href="https://arxiv.org/abs/2602.16844" target="_blank" rel="noopener">Overseeing Agents Without Constant Oversight</a></span>
+              <span class="goal-action-item research"><a href="https://arxiv.org/abs/2507.22358" target="_blank" rel="noopener">Magentic-UI: Towards Human-in-the-loop Agentic Systems</a></span>
             </div>
           </div>
         </div>
@@ -1661,7 +1693,7 @@
         <div class="goal-label" style="color:#998c5d">Next Step · Mid-term</div>
         <div class="timeline-title">AI가 개입하는 제품을 팀 단위로 설계할 수 있는 디자이너</div>
         <div class="timeline-body">
-          제품에 AI 기능 하나를 더하는 일보다, 팀이 같은 기준으로 기능의 범위와 실패 상황을 판단하게 만드는 일에 관심이 있습니다. 어떤 결정은 AI에 맡기고 어떤 결정은 사람에게 남길지, 잘못됐을 때 어떻게 알리고 되돌릴지를 기획과 개발 단계부터 함께 다루고 싶습니다. <strong>개인의 감각에 머물던 판단을 팀이 함께 사용할 수 있는 원칙과 리뷰 기준으로 만드는 것</strong>이 중기 목표입니다.
+          화면 속 AI 기능뿐 아니라 로봇과 반응형 오브젝트처럼 물리적으로 존재하는 인터페이스까지 다루고 싶습니다. 어떤 결정은 시스템에 맡기고 어떤 순간에는 사람을 불러야 하는지, 잘못됐을 때 어떻게 알리고 멈출지를 기획과 개발 단계부터 함께 살펴보려 합니다. <strong>개인의 감각에 머물던 판단을 팀이 함께 사용할 수 있는 원칙과 리뷰 기준으로 만드는 것</strong>이 중기 목표입니다.
         </div>
         <div class="timeline-tags">
           <span class="ttag">AI UX 리뷰 기준</span>
@@ -1690,15 +1722,15 @@
       <div class="timeline-line"></div>
       <div class="timeline-content">
         <div class="goal-label" style="color:#695e43">Long-term · Research</div>
-        <div class="timeline-title">실무에서 찾은 문제를 Human-AI Interaction 연구로 이어가기</div>
+        <div class="timeline-title">실무에서 찾은 문제를 Human-AI Interaction과 HRI 연구로 이어가기</div>
         <div class="timeline-body">
-          실무에서 반복해서 만난 장면을 경험담으로만 남기고 싶지는 않습니다. AI가 실행을 제안하거나 먼저 행동할 때, 사람의 신뢰와 통제감이 어떤 조건에서 달라지는지 연구하고 싶습니다. 박사과정에서는 <strong>AI가 개입하는 의사결정, 설명 가능한 인터페이스, 화면이 줄어든 환경의 피드백 방식</strong>을 다루고, 그 결과를 다시 실제 제품에 적용하는 일을 이어가고 싶습니다.
+          실무에서 반복해서 만난 장면을 경험담으로만 남기고 싶지는 않습니다. AI Agent나 로봇이 먼저 행동할 때 사람이 상태를 어떻게 이해하고, 어느 순간 개입하며, 책임의 경계를 어디에 두는지 연구하고 싶습니다. 박사과정에서는 <strong>Human-AI Interaction, HRI, Embodied AI, 화면이 줄어든 환경의 피드백 방식</strong>을 다루고, 그 결과를 다시 실제 제품과 프로토타입에 적용하는 일을 이어가고 싶습니다.
         </div>
         <div class="timeline-tags">
           <span class="ttag">Human-AI Interaction</span>
-          <span class="ttag">설명과 통제감</span>
+          <span class="ttag">Human-Robot Interaction</span>
+          <span class="ttag">Embodied AI</span>
           <span class="ttag">연구 질문 구체화</span>
-          <span class="ttag">박사과정 준비</span>
         </div>
         <div class="goal-actions-grid" style="margin-top:16px">
           <div class="goal-action-block">
@@ -1745,16 +1777,16 @@
 <div class="page" id="targets">
 
   <div class="targets-hero">
-    <h1 class="targets-headline">언제 개입하고,<br />어디까지 맡길 것인가.</h1>
+    <h1 class="targets-headline">AI Agent와 로봇의<br />사용자 경험을 연구합니다.</h1>
     <div class="goals-intro">
-      지난 학기의 두 프로젝트는 AI가 사람보다 먼저 보고 판단하는 상황을 다뤘습니다. 제조 현장에서는 잘못된 실행을 막을 경계가 필요했고, 미술관에서는 지나친 안내를 막을 절제가 필요했습니다. <strong style="color:#3d3d3d">앞으로도 기술의 능력보다, 그 능력을 사람이 편안하게 받아들일 수 있는 조건을 설계하고 싶습니다.</strong>
+      제조 현장의 AI Agent, 미술관의 스마트 글래스, 이번 학기의 데스크 오브젝트는 형태가 서로 다릅니다. 하지만 시스템이 먼저 움직일 때 사람이 그 상태를 알아차리고 필요하면 개입해야 한다는 점은 같습니다. <strong style="color:#3d3d3d">화면 속 인터페이스뿐 아니라 움직임과 거리, 빛과 촉각으로 소통하는 로봇과 피지컬 AI까지 관심을 넓히고 있습니다.</strong>
     </div>
   </div>
 
   <div class="goals-quote">
     <div class="goals-quote-spacer"></div>
     <div class="goals-quote-inner">
-설명은 많을수록 좋은 게 아니었습니다. 필요한 순간에, 판단에 필요한 만큼 보여주는 편이 더 나았습니다.
+로봇은 꼭 사람 모양일 필요가 없습니다. 상태를 드러내고 사람이 개입할 수 있게 만드는 것도 중요한 HRI 문제입니다.
     </div>
   </div>
 
@@ -1791,8 +1823,8 @@
             <line x1="7.5" y1="8.5" x2="12.5" y2="8.5"/><line x1="7.5" y1="11.5" x2="11" y2="11.5"/>
           </svg>
         </div>
-        <div class="focus-cell-title">Understandable Feedback</div>
-        <div class="focus-cell-desc">사용자에게 필요한 것은 모델의 모든 설명이 아니라 지금 무슨 일이 일어났고, 왜 이런 결과가 나왔으며, 다음에 무엇을 할 수 있는지에 대한 답입니다. 복잡한 작동 원리를 판단에 필요한 정보로 바꾸고, 실패했을 때 회복할 수 있는 흐름을 설계합니다.</div>
+        <div class="focus-cell-title">HRI & Embodied Interaction</div>
+        <div class="focus-cell-desc">로봇과 반응형 오브젝트가 의도와 상태를 움직임으로 어떻게 드러내는지, 사람은 그 신호를 어떻게 해석하고 반응하는지에 관심이 있습니다. 사람처럼 보이는 형태보다 역할과 거리, 움직임, 개입 방법이 관계를 어떻게 만드는지 살펴봅니다.</div>
       </div>
       <div class="focus-cell">
         <div class="focus-cell-icon">
@@ -1804,8 +1836,8 @@
             <path d="M4.93 19.07a10 10 0 0 1 0-14.14"/>
           </svg>
         </div>
-        <div class="focus-cell-title">Multimodal & Ambient UX</div>
-        <div class="focus-cell-desc">화면이 작아지거나 사라지면 피드백은 더 신중해야 합니다. 시각, 음성, 촉각 가운데 어느 채널을 쓸지, 얼마나 강하게 알릴지, 사용자가 개입을 거절하는 방법은 무엇인지 살펴봅니다. 스마트 글래스 프로젝트에서 시작한 질문을 생활 공간과 업무 환경으로 넓혀보고 싶습니다.</div>
+        <div class="focus-cell-title">Physical & Ambient Feedback</div>
+        <div class="focus-cell-desc">화면이 작아지거나 사라지면 상태를 알리는 방식이 달라져야 합니다. 움직임, 빛, 음성, 촉각 가운데 어떤 신호가 적절한지, 어느 정도의 강도가 방해 없이 알아차릴 수 있는 수준인지 직접 만들고 테스트합니다.</div>
       </div>
     </div>
   </div>
@@ -1861,19 +1893,20 @@ Google PAIR의 People + AI Guidebook은 AI 기능을 설계할 때 제가 자주
     <div class="org-row c3">
       <div class="org-index">
         <div class="org-index-mark">03</div>
-        <div class="org-index-name">HCI Research /<br />Human-Centered AI</div>
+        <div class="org-index-name">HCI / HRI Research</div>
       </div>
       <div class="org-main">
         <div class="org-main-body" style="margin-bottom:0">
-          장기적으로는 AI가 개입하는 의사결정과 자동화 수용의 조건을 HCI, 인지심리학, 행동과학의 관점에서 공부하고 싶습니다. 실무에서 ‘사용자가 불안해했다’고 기록한 장면을 연구에서는 관찰하고 비교할 수 있는 질문으로 바꾸고, 왜 그런 반응이 생겼는지 설명할 수 있는 근거를 쌓으려 합니다.
+          장기적으로는 AI가 개입하는 의사결정과 자동화 수용의 조건을 HCI와 HRI, 인지심리학, 행동과학의 관점에서 공부하고 싶습니다. 화면 속 Agent뿐 아니라 물리적으로 움직이고 공간을 공유하는 로봇까지 범위를 넓혀, 사람의 신뢰와 개입 방식이 어떻게 달라지는지 연구하고 싶습니다.
         </div>
         <div class="org-main-tags">
           <span class="org-badge">HCI Research</span>
+          <span class="org-badge">HRI</span>
           <span class="org-badge">PhD Path</span>
         </div>
         <div class="org-contrib" style="margin-top:20px">
           <div class="org-contrib-label">How I am preparing</div>
-          <div class="org-contrib-body">대학원 프로젝트와 실무 사례를 같은 질문으로 기록하고, 관련 논문을 읽으며 연구 방법을 익히고 있습니다. 이 기록을 쌓아 장기적으로 박사과정 지원까지 이어갈 계획입니다.</div>
+          <div class="org-contrib-body">대학원에서 AI 작업 상태를 표현하는 피지컬 오브젝트를 만들며 HRI 사례와 사용자 개입 방식을 조사하고 있습니다. 실무 사례와 프로토타입 기록을 쌓아 장기적으로 박사과정 지원까지 이어갈 계획입니다.</div>
         </div>
       </div>
     </div>
@@ -1886,10 +1919,11 @@ Google PAIR의 People + AI Guidebook은 AI 기능을 설계할 때 제가 자주
       <div class="org-main">
         <div class="org-main-title">연구와 실제 시스템 설계가 가까이 있는 환경</div>
         <div class="org-main-body">
-          CMU HCII는 사람과 기술의 관계를 연구하면서 결과를 실제 시스템과 프로토타입으로 검증하는 환경이라는 점이 매력적입니다. 저 역시 현장에서 반복해서 본 문제를 <strong>관찰하고 검증할 수 있는 연구 질문</strong>으로 바꾸고 싶습니다. Human-AI Interaction과 설명 가능한 인터페이스를 공부할 때 계속 참고하고 싶은 기준점입니다.
+          CMU HCII는 사람과 기술의 관계를 연구하면서 결과를 실제 시스템과 프로토타입으로 검증한다는 점이 매력적입니다. 저 역시 현장에서 반복해서 본 문제를 <strong>관찰하고 검증할 수 있는 연구 질문</strong>으로 바꾸고 싶습니다. Human-AI Interaction뿐 아니라 HRI와 로보틱스가 만나는 연구를 공부할 때 계속 참고하고 싶은 기준점입니다.
         </div>
         <div class="org-main-tags">
           <span class="org-badge">Human-AI Interaction</span>
+          <span class="org-badge">HRI + Robotics</span>
           <span class="org-badge">Research + Systems</span>
         </div>
       </div>
@@ -1933,6 +1967,28 @@ Google PAIR의 People + AI Guidebook은 AI 기능을 설계할 때 제가 자주
       </div>
     </div>
 
+    <div class="org-row c4">
+      <div class="org-index">
+        <div class="org-index-mark">05</div>
+        <div class="org-index-name">Robotics / Embodied AI<br />Labs &amp; Product Teams</div>
+      </div>
+      <div class="org-main">
+        <div class="org-main-title">사람과 공간을 공유하는 AI를 실제 제품으로 만드는 환경</div>
+        <div class="org-main-body">
+          로봇과 피지컬 AI는 화면 속 인터페이스와 달리 움직임, 거리, 방향, 소리 자체가 피드백이 됩니다. 휴머노이드 형태에 한정하지 않고, 산업 현장이나 생활 공간에서 사람과 함께 일하는 시스템을 설계해보고 싶습니다. <strong>로봇의 상태와 의도를 사람이 자연스럽게 읽고 필요할 때 멈추거나 개입하는 경험</strong>이 특히 궁금합니다.
+        </div>
+        <div class="org-main-tags">
+          <span class="org-badge">Human-Robot Interaction</span>
+          <span class="org-badge">Embodied AI</span>
+          <span class="org-badge">Physical Interaction</span>
+        </div>
+        <div class="org-contrib">
+          <div class="org-contrib-label">What I want to build</div>
+          <div class="org-contrib-body">화면 중심 제품에서 익힌 상태와 권한 설계를 움직임·빛·촉각으로 확장하고, 실제 환경에서 사람이 이해하고 제어할 수 있는 로봇 경험을 만들고 싶습니다.</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div class="direction-section">
@@ -1941,7 +1997,7 @@ Google PAIR의 People + AI Guidebook은 AI 기능을 설계할 때 제가 자주
     </div>
     <div class="who-inner" style="padding-top:32px; padding-bottom:56px;">
       <div class="direction-body">
-        첫 학기 전에는 ‘신뢰’를 넓고 추상적으로 이야기했습니다. 두 프로젝트를 거치며 이제는 실행 범위, 개입 시점, 상태 표시, 되돌리기처럼 실제로 설계하고 확인할 수 있는 단위로 질문하게 됐습니다. 이번 학기에는 이 기준을 더 단단하게 만들겠습니다. 실무에서 문제를 발견하고, 연구로 이유를 확인한 뒤, 다시 제품에서 써보는 일을 오래 이어가는 <strong>실무자이자 연구자</strong>가 되고 싶습니다.
+        첫 학기에는 화면 안에서 AI의 실행 범위와 개입 시점을 다뤘습니다. 이번 학기에는 같은 문제를 물리적인 움직임과 주변부 신호로 옮겨보고 있습니다. 앞으로는 제품 UX에서 쌓은 경험을 HRI와 로보틱스로 넓혀, AI나 로봇이 먼저 행동할 때 사람이 상태를 이해하고 필요하면 개입할 수 있는 방식을 연구하고 싶습니다. 실무에서 문제를 찾고 프로토타입으로 시험한 뒤 연구로 이유를 확인하는 <strong>실무자이자 연구자</strong>가 되는 것이 장기적인 방향입니다.
       </div>
     </div>
   </div>
