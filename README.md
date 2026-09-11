@@ -4,8 +4,8 @@
 
 ## 구성
 
-- Background: 경력, 첫 학기 프로젝트, 현재 수강 과목과 진행 중인 프로젝트
-- Goals: 2학기 계획과 중장기 목표
-- Focus & Direction: 현재의 연구 관심, MIT·Stanford HRI 연구 환경, 박사과정 준비 방향
+- Background: 대학원 진학 전 경력, 현재 실무, 대학원에서 진행한 프로젝트
+- Goals: 대학원에서의 목표, 현재 검증 방식, 중장기 계획
+- Focus & Direction: 관심 분야, MIT·Stanford HRI 연구 환경, 박사과정 준비 방향
 
 빌드 과정이 없는 단일 정적 HTML 페이지입니다. `index.html`을 브라우저에서 열면 바로 확인할 수 있습니다.
