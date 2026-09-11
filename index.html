@@ -1198,10 +1198,13 @@
 
     .project-update-grid.single .project-update {
       display: grid;
-      grid-template-columns: minmax(220px, .75fr) minmax(0, 1.75fr);
-      gap: 48px;
+      grid-template-columns: minmax(0, 1.55fr) minmax(300px, .85fr);
+      gap: 56px;
+      align-items: start;
       padding-right: 0;
     }
+
+    .project-update-grid.single .project-main { min-width: 0; }
 
     .project-update-grid.single .project-learning {
       margin-top: 0;
@@ -1268,6 +1271,7 @@
       .who-card, .who-card:not(:first-child) { padding: 28px 0; }
       .who-card::after { top: auto; bottom: 0; width: 100%; height: 1px; transform: none; }
       .semester-section-head { grid-template-columns: 1fr; gap: 10px; }
+      .project-update-grid.single .project-update { grid-template-columns: 1fr; gap: 24px; }
       .focus-row { grid-template-columns: 1fr 1fr; }
       .focus-cell:nth-child(2) { border-right: 0; }
       .focus-cell:nth-child(-n+2) { border-bottom: 1px solid var(--rule); }
@@ -1583,9 +1587,11 @@
     </div>
     <div class="project-update-grid single">
       <article class="project-update">
-        <div class="project-meta">01 · 지능형로보틱스특론 · HRI / Robotics UX</div>
-        <h3 class="project-title">ReachAble — 로봇팔 작업공간을 가시화하는 HRI UX</h3>
-        <p class="project-body">2-DOF 평면 로봇팔의 말단 장치(End-Effector)가 도달할 수 있는 작업공간(workspace)을 가시화하고, 사용자가 목표 좌표를 지정하면 역기구학(IK)과 충돌 검사를 거쳐 실행 가능성을 판단하는 HRI 프로토타입입니다. 도달 불가, 목표 자세의 충돌, 이동 경로의 충돌을 구분해 설명하고 가장 가까운 실행 가능 위치를 제안한 뒤 사용자가 승인하도록 설계했습니다. 로봇의 물리적 제약과 내부 판단을 사용자가 이해하고 수정할 수 있는 정보로 바꾸는 UX를 연구합니다.</p>
+        <div class="project-main">
+          <div class="project-meta">01 · 지능형로보틱스특론 · HRI / Robotics UX</div>
+          <h3 class="project-title">ReachAble: 로봇팔 작업공간을 가시화하는 HRI UX</h3>
+          <p class="project-body">2-DOF 평면 로봇팔의 말단 장치(End-Effector)가 도달할 수 있는 작업공간(workspace)을 가시화하고, 사용자가 목표 좌표를 지정하면 역기구학(IK)과 충돌 검사를 거쳐 실행 가능성을 판단하는 HRI 프로토타입입니다. 도달 불가, 목표 자세의 충돌, 이동 경로의 충돌을 구분해 설명하고 가장 가까운 실행 가능 위치를 제안한 뒤 사용자가 승인하도록 설계했습니다. 로봇의 물리적 제약과 내부 판단을 사용자가 이해하고 수정할 수 있는 정보로 바꾸는 UX를 연구합니다.</p>
+        </div>
         <p class="project-learning">연구 질문 · 작업공간과 실패 원인, 대체 목표를 함께 제시하면 사용자가 실행 가능한 목표를 더 빠르고 정확하게 지정하고 실패에서 회복할 수 있을까?</p>
       </article>
     </div>
